@@ -1,0 +1,1146 @@
+body, html {
+    margin: 0;
+	background-color: rgba(27, 25, 25, 50);
+    height: auto; /* Allow body to adjust based on content */
+    overflow-y: auto; 
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: transparent;
+	transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.navbar .nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    margin-left: 40px; /* Adjust this value to move the nav items left */
+}
+
+.navbar .nav-item {
+    position: relative;
+}
+
+.navbar .nav-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 22px; /* Adjust font size here */
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.hero {
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+	margin-bottom: 0;
+}
+
+.dropdown-toggle::after {
+    font-size: 0.5em; /* Smaller dropdown icon */
+    color: #aaa; /* Lighter color */
+}
+
+.dropdown-menu .dropdown-item {
+    font-weight: 300; /* Light */
+    font-size: 18px; /* Smaller font size */
+    color: #777; /* Lighter color */
+}
+
+.dropdown-menu .dropdown-item:hover {
+    color: #333; /* Slightly darker on hover */
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f7f5f0;
+}
+
+.hero .container {
+    z-index: 2;
+}
+
+h1 {
+    font-size: 2rem;
+	 
+    font-weight: 700; /* Bold */
+    color: #333;
+}
+
+p {
+    font-size: 1.6rem;
+    font-weight: 600; /* Semi-Bold */
+    color: #666;
+}
+p1 {
+    font-size: 1.4rem;
+    font-weight: 500; /* Semi-Bold */
+    color: #333;
+}
+
+.highlight {
+    color: #457f3b;
+    font-weight: bold;
+}
+
+.rounded-div {
+    background-color: #f7f5f0; /* Same as the page background */
+    border-radius: 0 0 45px 45px;  /* Rounded corners */
+    padding: 20px; /* Padding inside the div */
+    margin-top: 0; /* Space above the div */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for better visibility */
+}
+.rounded-div1 {
+    background-color:#f7f5f0 ; /* Same as the page background */
+    border-radius: 45px 45px 0 0; /* Rounded corners */
+    padding: 20px; /* Padding inside the div */
+    margin-top: 0; /* Space above the div */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Subtle shadow for better visibility */
+}
+.article-card h1 {
+  width: 100%;
+  text-align: left;
+  margin: 0;
+  font-size: 1.75rem;
+  margin-bottom: 7px;
+  opacity: 1; 
+  color: #333; 
+  
+}
+.article-card {
+  display: flex;
+  align-items: center;
+  background-color: rgba(245, 202, 105, 6%);
+  border-radius: 15px;
+  padding: 20px;
+  
+  margin: 20px auto; /* Center the card horizontally */
+  animation: fadeIn 0.5s ease-in-out;
+  width: 90%; /* Adjust width as needed */
+  
+}
+
+/* Add styles for the animated article and pill buttons */
+.animated-article {
+    display: flex;
+  align-items: center;
+ background-color: rgba(206, 242, 98, 6%);/* Light peach color */
+  border-radius: 15px;
+  padding: 20px;
+ 
+  margin: 20px auto; /* Center the card horizontally */
+  width: 90%; /* Adjust width as needed */
+    animation: fadeIn 0.5s ease-in-out;
+    overflow: hidden; /* Ensure pills stay within the article box */
+}
+
+.animated-article .article-content h2,
+.animated-article .article-content h4,
+.animated-article .article-content p {
+   
+    animation: slideInFromLeft 0.5s ease-out;
+}
+.highlight1 {
+    color: #35682b ;
+    font-weight: bold;
+}
+
+.animated-article h1 {
+  width: 100%;
+  text-align: left;
+  margin: 0;
+  font-size: 1.75rem;
+  margin-bottom: 7px;
+  opacity: 1; 
+  color: #333;  
+}
+
+.pill-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.pill {
+    background-color: #457f3b;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.1s;
+    position: relative; /* Ensure relative positioning for dragging */
+}
+
+.pill:hover {
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.article-card1 {
+  display: flex;
+  align-items: center;
+  background-color: rgba(64, 123, 125, 2%);
+  border-radius: 15px;
+  padding: 20px;
+  
+  margin: 20px auto; /* Center the card horizontally */
+  animation: fadeIn 0.5s ease-in-out;
+  width: 90%; /* Adjust width as needed */
+  
+}
+
+.article-card1 h1 {
+  width: 100%;
+  text-align: left;
+  margin: 0;
+  font-size: 1.75rem;
+  margin-bottom: 6px;
+  opacity: 1; 
+  color: #333; 
+  
+}
+
+.highlight2 {
+    color: #9C1A1F ;
+    font-weight: bold;
+}
+
+
+
+.article-content {
+  flex: 1;
+}
+
+
+
+.article-content .highlight {
+  color: #ff8c00; /* Highlight color */
+}
+
+.article-content p {
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 5px;
+  opacity: 1;
+  animation: slideInFromLeft 0.5s ease-out;
+}
+
+.article-content h3 {
+   width: 100%;
+  text-align: left;
+  margin: 0;
+  font-size: 1.3rem;
+  margin-bottom: 1px;
+  opacity: 1;
+  animation: slideInFromLeft 0.5s ease-out;
+}
+
+.article-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+
+
+.article img {
+    max-width: 100%;
+    border-radius: 8px;
+	opacity: 1;
+}
+
+
+}
+
+
+/* General reset and styling */
+* {
+   margin: 0;
+    height: 100%; /* Allow body to adjust based on content */
+    overflow-y: auto; 
+    padding: 0;
+}
+.horizontal-scroll-section {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px 0;
+    height: 90vh; /* Set the section height to half of the viewport height */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.horizontal-scroll-section::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+}
+
+.horizontal-container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: max-content; /* Ensure the container can expand horizontally */
+}
+
+.horizontal-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex: 0 0 70%; /* Each card takes up 70% of the viewport width */
+    height: 90vh; /* Each card takes up 50% of the viewport height */
+    margin: 0 10px;
+    padding: 20px;
+    background-color: rgba(251, 238, 215, 30%);
+    border-radius: 8px;
+   
+    white-space: normal; /* Allow text to wrap inside the card */
+}
+.horizontal-card1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex: 0 0 70%; /* Each card takes up 70% of the viewport width */
+    height: 90vh; /* Each card takes up 50% of the viewport height */
+    margin: 0 10px;
+    padding: 20px;
+    background-color: rgba(243, 185, 112, 20%);
+    border-radius: 8px;
+   
+    white-space: normal; /* Allow text to wrap inside the card */
+}
+.horizontal-card2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex: 0 0 70%; /* Each card takes up 70% of the viewport width */
+    height: 90vh; /* Each card takes up 50% of the viewport height */
+    margin: 0 10px;
+    padding: 20px;
+    background-color: rgba(202, 99, 52, 10%);
+    border-radius: 8px;
+   
+    white-space: normal; /* Allow text to wrap inside the card */
+}
+.horizontal-card3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex: 0 0 70%; /* Each card takes up 70% of the viewport width */
+    height: 90vh; /* Each card takes up 50% of the viewport height */
+    margin: 0 10px;
+    padding: 20px;
+    background-color: rgba(53, 104, 43, 10%);
+    border-radius: 8px;
+   
+    white-space: normal; /* Allow text to wrap inside the card */
+}
+.a-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex: 0 0 40%; /* Each card takes up 70% of the viewport width */
+    height: 90vh; /* Each card takes up 50% of the viewport height */
+    margin: 0 10px;
+    padding: 20px;
+    background-color:rgba(251, 238, 215, 5%) ;
+    border-radius: 8px;
+   
+    white-space: normal; /* Allow text to wrap inside the card */
+}
+
+
+
+
+.description {
+    flex: 1;
+    margin-right: 20px;
+    word-wrap: break-word; /* Ensure long words break to the next line */
+}
+
+.mockup {
+    flex-shrink: 0;
+    width: 30%; /* Ensure images take up to 30% of the card width */
+    height: 100%; /* Ensure the image container takes up the full height of the card */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the image */
+}
+
+.mockup img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: 100%; /* Ensure the image takes up the full height of the container */
+    display: block;
+    object-fit: cover; /* Ensure the image covers the container without stretching */
+}
+
+.highlight3 {
+    color: #B1552C ;
+    font-weight: bold;
+}
+.highlight4 {
+    color: #56423D ;
+    font-weight: bold;
+}
+.highlight5 {
+    color: #EA0001 ;
+    font-weight: bold;
+}
+.highlight6 {
+    color: #35682B ;
+    font-weight: bold;
+}
+
+
+.cta {
+  display: flex;
+  padding: 11px 33px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  color: white;
+  background: #35682B;
+  transition: 1s;
+  box-shadow: 6px 6px 0 black;
+  transform: skewX(-15deg);
+  border: none;
+}
+
+.cta:focus {
+  outline: none;
+}
+
+.cta:hover {
+  transition: 0.5s;
+  box-shadow: 10px 10px 0 #F1CA69;
+}
+
+.cta .second {
+  transition: 0.5s;
+  margin-right: 0px;
+}
+
+.cta:hover  .second {
+  transition: 0.5s;
+  margin-right: 45px;
+}
+
+.span {
+  transform: skewX(15deg)
+}
+
+.second {
+  width: 20px;
+  margin-left: 30px;
+  position: relative;
+  top: 12%;
+}
+
+.one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+.two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+.cta:hover .three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover .one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover .two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+
+  50% {
+    fill: #FBC638;
+  }
+
+  100% {
+    fill: white;
+  }
+}
+
+
+/* Your existing CSS */
+
+/* Styles for the card section wrapper */
+.card-section-wrapper {
+    background-color: rgba(27, 25, 25, 50); /* Black background for the entire section */
+    padding: 50px 0; /* Vertical padding to space out the cards */
+}
+
+/* Styles for Card Section */
+.container.my-5 {
+    padding: 50px 20px;
+    border-radius: 15px;
+}
+
+.card {
+    border-radius: 0 0 15px 15px; /* Rounded corners at the bottom */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 20px;
+    color: #fff;	/* Text color for the cards */
+	width: 300px; /* Fixed width */
+    height: 250px; /* Fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-green {
+    background-color:  #F1CA69  !important; /* Green color for the first card */
+}
+
+.card-blue {
+    background-color:  #35682B !important; /* Blue color for the second card */
+}
+
+.card-brown {
+    background-color: #56423D !important; /* Brown color for the third card */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.icon-style {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #fff; /* Icon color */
+}
+
+.card h2 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #fff; /* Text color for the numbers */
+}
+
+.card p {
+    font-size: 1rem;
+    color: #fff; /* Text color for the description */
+    margin-top: 10px;
+}
+
+
+.text-white {
+    color: #fff; /* Text color for the heading */
+}
+
+
+.marquee {
+    overflow: hidden;
+    width: 100%;
+    height: 500px; /* Adjust height to fit two rows of cards */
+    position: relative;
+    white-space: nowrap;
+}
+
+.marquee-inner {
+    display: flex;
+    flex-direction: column; /* Stack rows vertically */
+    animation: scroll 120s linear infinite; /* Adjust duration as needed */
+    width: max-content; /* Ensure that width accommodates all content */
+}
+
+.marquee-row {
+    display: flex;
+    flex-direction: row; /* Arrange cards in a row */
+    align-items: flex-start; /* Ensure alignment of items */
+}
+
+.card {
+    background: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    white-space: normal;
+    box-sizing: border-box;
+    margin-right: 20px;
+    min-width: 250px; /* Increase width as needed */
+    display: inline-block;
+    box-shadow: none; /* Remove shadow */
+    opacity: 0.7; /* Adjust opacity level here */
+    height: auto; /* Allow height to adjust based on content */
+    position: relative; /* Required for absolute positioning of the image */
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Make image circular */
+    position: absolute; /* Position image absolutely within card */
+    top: 10px; /* Adjust top spacing */
+    left: 10px; /* Adjust left spacing */
+    object-fit: cover; /* Ensure image covers its box */
+}
+
+.card p {
+    margin: 0;
+    color: #343a40;
+    margin-top: 70px; /* Adjust margin-top to ensure text doesn't overlap the image */
+}
+
+.card .name {
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: left;
+    color: #6c757d;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+.marquee-paused .marquee-inner {
+    animation-play-state: paused;
+}
+
+b {
+    background-color: #fdfdfd;
+}
+
+.faq-container {
+    background-color: #fff;
+    border-radius: 20px ;
+   border-style: solid; /* Ensure borders are solid */
+    border-width: 2px 4px 4px 2px; /* Top, Right, Bottom, Left */
+    border-color: #000; /* Color for all borders */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    height: 500px; /* Fixed height */
+}
+
+.section-heading {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+	text-align:left;
+}
+
+.faq-box, .answer-box {
+    height: 100%; /* Make both sections occupy full height */
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-list-group {
+    flex-grow: 1;
+    display: flex;
+	
+    flex-direction: column;
+    gap: 20px; /* Space between questions */
+}
+
+.faq-list-item {
+    padding: 15px 20px;
+    background-color: #f6f6f6;
+    border-radius: 15px;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq-list-item:hover, .faq-list-item.selected {
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #000;
+}
+
+.faq-answer-box {
+    flex-grow: 1;
+    background-color: #f8d56e;
+    border-radius: 15px;
+    border-style: solid; /* Ensure borders are solid */
+    border-width: 2px 5px 5px 2px; /* Top, Right, Bottom, Left */
+    border-color: #000; /* Color for all borders */
+    padding: 30px;
+    font-size: 1.2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-answer-box #faq-answer {
+    width: 100%;
+    text-align: left;
+    color: #000;
+    font-weight: bold;
+}
+
+
+
+.decorations {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.decoration {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    transition: transform 0.1s ease-out; /* Reduced transition time for quicker response */
+}
+
+/* Adjust the positions and sizes of each decoration */
+
+/* Image Elements */
+.i1 { bottom: 50%; left: 1%; width: 100px; height: 100px; }
+.i2 { bottom: 40%; left: 10%; width: 80px; height: 80px; }
+.i3 { bottom: 20%; right: 20%; width: 90px; height: 90px; }
+.i4 { top: 25%; left: 35%; width: 110px; height: 110px; }
+
+/* Diamond Shapes */
+.d1 { top: 20%; right: 20%; width: 120px; height: 120px; }
+.d2 { bottom: 30%; left: 20%; width: 100px; height: 100px; }
+.d3 { bottom: 10%; left: 10%; width: 50px; height: 50px; }
+.d5 { top: 20%; left: 10%; width: 80px; height: 80px; }
+.d6 { top: 20%; right: 10%; width: 60px; height: 60px; }
+
+.d4 { top: 30%; left: 55%; width: 70px; height: 70px; transform: translate(-50%, -50%); }
+
+
+/* Other Shapes */
+.p1 { bottom: 30%; right: 30%; width: 60px; height: 60px; }
+.p2 { bottom: 20%; left: 2%; width: 70px; height: 70px; }
+.p3 { top: 20%; right: 1%; width: 70px; height: 70px; }
+.p4 { bottom: 20%; right: 10%; width: 90px; height: 90px; }
+
+*n {
+    margin: 0;
+    padding: 0;
+    height: 100%;    
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.footer {
+    background-color: #1e1e1e;
+    color: #f7f5f0;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 60px 20px;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.background-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15vw;
+    color: rgba(69, 127, 59, 0.2);
+    z-index: 0;
+    white-space: nowrap;
+    pointer-events: none; /* Ensure it doesn't interfere with other elements */
+    user-select: none; /* Prevent text selection */
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+	
+}
+
+.footer-description {
+	padding: 30px;
+    font-size: 18px;
+    line-height: 1.4;
+	color: #f7f5f0;
+    max-width: 100%;
+}
+
+.footer-title {
+    font-size: 24px;
+    font-weight: bold;
+	padding: 30px;
+	color: #35682B;
+    margin-bottom: 20px;
+}
+
+.footer-text, .footer-hiring {
+    font-size: 16px;
+    margin-bottom: 20px;
+	margin-right:5px;
+}
+
+.footer-hiring a {
+    color: #f7f5f0;
+	width:100%;
+    text-decoration: none;
+}
+
+.footer-hiring a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 1px;
+	margin-left:20px;
+}
+
+.social-icons a {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #333;
+    color: #f7f5f0;
+    text-decoration: none;
+}
+
+.links ul {
+    list-style: none;
+	color: #f7f5f0;
+	
+}
+
+.links ul li {
+    margin-bottom: 10px;
+	color: #f7f5f0;
+}
+
+.links ul li a {
+    color: #f7f5f0;
+    text-decoration: none;
+    font-size: 18px;
+	margin-top: 10px;
+}
+
+.links ul li a:hover {
+    text-decoration: underline;
+}
+
+.type--C {
+  --line_color: #35682B;
+  --back_color: #F7F5F0;
+}
+.button {
+  position: relative;
+  z-index: 0;
+  width: 240px;
+  height: 56px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--line_color);
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+.button__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.button::before,
+.button::after,
+.button__text::before,
+.button__text::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--line_color);
+  transition: all 0.5s ease;
+}
+.button::before {
+  top: 0;
+  left: 54px;
+  width: calc(100% - 56px * 2 - 16px);
+}
+.button::after {
+  top: 0;
+  right: 54px;
+  width: 8px;
+}
+.button__text::before {
+  bottom: 0;
+  right: 54px;
+  width: calc(100% - 56px * 2 - 16px);
+}
+.button__text::after {
+  bottom: 0;
+  left: 54px;
+  width: 8px;
+}
+.button__line {
+  position: absolute;
+  top: 0;
+  width: 56px;
+  height: 100%;
+  overflow: hidden;
+}
+.button__line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 150%;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 300px;
+  border: solid 3px var(--line_color);
+}
+.button__line:nth-child(1),
+.button__line:nth-child(1)::before {
+  left: 0;
+}
+.button__line:nth-child(2),
+.button__line:nth-child(2)::before {
+  right: 0;
+}
+.button:hover {
+  letter-spacing: 6px;
+}
+.button:hover::before,
+.button:hover .button__text::before {
+  width: 8px;
+}
+.button:hover::after,
+.button:hover .button__text::after {
+  width: calc(100% - 56px * 2 - 16px);
+}
+.button__drow1,
+.button__drow2 {
+  position: absolute;
+  z-index: -1;
+  border-radius: 16px;
+  transform-origin: 16px 16px;
+}
+.button__drow1 {
+  top: -16px;
+  left: 40px;
+  width: 32px;
+  height: 0;
+  transform: rotate(30deg);
+}
+.button__drow2 {
+  top: 44px;
+  left: 77px;
+  width: 32px;
+  height: 0;
+  transform: rotate(-127deg);
+}
+.button__drow1::before,
+.button__drow1::after,
+.button__drow2::before,
+.button__drow2::after {
+  content: "";
+  position: absolute;
+}
+.button__drow1::before {
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 32px;
+  border-radius: 16px;
+  transform-origin: 16px 16px;
+  transform: rotate(-60deg);
+}
+.button__drow1::after {
+  top: -10px;
+  left: 45px;
+  width: 0;
+  height: 32px;
+  border-radius: 16px;
+  transform-origin: 16px 16px;
+  transform: rotate(69deg);
+}
+.button__drow2::before {
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 32px;
+  border-radius: 16px;
+  transform-origin: 16px 16px;
+  transform: rotate(-146deg);
+}
+.button__drow2::after {
+  bottom: 26px;
+  left: -40px;
+  width: 0;
+  height: 32px;
+  border-radius: 16px;
+  transform-origin: 16px 16px;
+  transform: rotate(-262deg);
+}
+.button__drow1,
+.button__drow1::before,
+.button__drow1::after,
+.button__drow2,
+.button__drow2::before,
+.button__drow2::after {
+  background: var(--back_color);
+}
+.button:hover .button__drow1 {
+  animation: drow1 ease-in 0.06s;
+  animation-fill-mode: forwards;
+}
+.button:hover .button__drow1::before {
+  animation: drow2 linear 0.08s 0.06s;
+  animation-fill-mode: forwards;
+}
+.button:hover .button__drow1::after {
+  animation: drow3 linear 0.03s 0.14s;
+  animation-fill-mode: forwards;
+}
+.button:hover .button__drow2 {
+  animation: drow4 linear 0.06s 0.2s;
+  animation-fill-mode: forwards;
+}
+.button:hover .button__drow2::before {
+  animation: drow3 linear 0.03s 0.26s;
+  animation-fill-mode: forwards;
+}
+.button:hover .button__drow2::after {
+  animation: drow5 linear 0.06s 0.32s;
+  animation-fill-mode: forwards;
+}
+@keyframes drow1 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100px;
+  }
+}
+@keyframes drow2 {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  11% {
+    opacity: 1;
+  }
+  100% {
+    width: 120px;
+  }
+}
+@keyframes drow3 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80px;
+  }
+}
+@keyframes drow4 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 120px;
+  }
+}
+@keyframes drow5 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 124px;
+  }
+}
+
+.containerW {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button:not(:last-child) {
+  margin-bottom: 64px;
+}
